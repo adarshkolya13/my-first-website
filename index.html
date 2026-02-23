@@ -1,69 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Website</title>
- <link rel="stylesheet" href="style.css" 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adarsh Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Adarsh</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-content">
+        <h1>Adarsh</h1>
+        <h2 id="typing"></h2>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
 </header>
 
+<!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
+
     <div class="profile-pic">
-    <img src="images/profile.jpg" alt="Profile Photo">
+        <img src="images/profile.jpg" alt="Profile Photo">
     </div>
+
     <p>
         I am learning web development and building my first website from scratch.
     </p>
-    <button onclick="sayHello()">Click Me</button>
 
+    <a href="#" class="btn">Download Resume</a>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
     <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Java (Learning)</li>
-    </ul>
+
+    <div class="skill-badges">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Java</span>
+    </div>
 </section>
 
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Built using HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Java Mini Project</h3>
+            <p>Console-based Java application.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SOCIAL -->
+<section id="social">
+    <h2>Connect With Me</h2>
+    <a href="https://github.com/adarshkolya13" target="_blank" class="btn">GitHub</a>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
     <h2>Contact Me</h2>
 
     <form id="contactForm">
-        <label>Name</label><br>
-        <input type="text" id="name"><br><br>
-
-        <label>Email</label><br>
-        <input type="email" id="email"><br><br>
-
-        <label>Message</label><br>
-        <textarea id="message"></textarea><br><br>
-
-        <button type="submit">Send</button>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="message" placeholder="Message"></textarea>
+        <button type="submit" class="btn">Send</button>
+        <p id="formMessage"></p>
     </form>
-
-    <p id="formMessage"></p>
 </section>
 
-
 <footer>
-    <p>© 2026 Adarsh</p>
+    © 2026 Adarsh
 </footer>
-<script src="script.js">ss</script>
+
+<script src="script.js"></script>
 </body>
-
 </html>
-
